@@ -5,15 +5,14 @@ import Job2 from "./assets/Job2.json";
 import Job1 from "./assets/Job1.json";
 import EducationBar from "./components/EducationalBar";
 import EducationBarDot from "./components/EducationalBarDot";
+import SectionHeading from "./components/SectionHeading";
 
-export default function EducationSection() {
+export default function JourneySection() {
     return (
         <div className="w-full bg-neutral-950 py-32 px-6 md:px-20 text-white">
 
             {/* Section Title */}
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-24">
-                Professional Journey
-            </h2>
+            <SectionHeading title="Professional Journey" />
 
             <div className="relative max-w-5xl mx-auto">
 
