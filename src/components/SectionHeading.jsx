@@ -1,9 +1,13 @@
-export default function SectionHeading({title}) {
+export default function SectionHeading({ title }) {
     return (
         <>
-            <h2 className="text-3xl md:text-4xl font-bold mb-16 relative inline-block">
+            <h2 className="group text-3xl md:text-4xl font-bold mb-16 relative inline-block">
                 {title}
-                <span className="absolute left-0 -bottom-3 w-16 h-1 bg-blue-500 rounded-full"></span>
+                <span className="absolute left-0 -bottom-3 h-1 w-full bg-blue-500 rounded-full 
+                   origin-left scale-x-50 
+                   transition-transform duration-300 ease-out 
+                   group-hover:scale-x-105">
+                </span>
             </h2>
         </>
     );

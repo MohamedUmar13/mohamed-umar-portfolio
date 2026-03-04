@@ -9,7 +9,7 @@ import SectionHeading from "./components/SectionHeading";
 
 export default function JourneySection() {
     return (
-        <div className="w-full bg-neutral-950 py-32 px-6 md:px-20 text-white">
+        <div className="py-20 px-6 md:px-20">
 
             {/* Section Title */}
             <SectionHeading title="Professional Journey" />
@@ -19,47 +19,58 @@ export default function JourneySection() {
                 {/* Vertical Timeline Line */}
                 <div className="absolute left-1/2 top-0 -translate-x-1/2 w-[2px] h-full bg-gradient-to-b from-blue-500/30 via-gray-600 to-blue-500/30"></div>
 
-                <div className="flex flex-col gap-24">
+                <div className="flex flex-col gap-10">
 
                     {/* LEFT ITEM */}
-                    <div className="relative flex items-center justify-between">
+                    <div className="relative flex flex-col md:flex-row items-center md:items-start">
 
-                        {/* Dot */}
+                        {/* DOT */}
                         <EducationBarDot />
-                        <div className="w-1/2 pr-12 text-right">
+
+                        {/* LEFT CONTENT */}
+                        <div className="w-full md:w-1/2 md:pr-12 md:text-right">
                             <EducationBar
                                 img={Job2}
-                                description="Full Stack Developer – TCLC.ai (Aug 2024 – Present). Building scalable mobile and web applications using Flutter and the MERN stack."
+                                description="Application Developer"
+                                place="TCLC.ai"
+                                year="Aug 2024 – Present."
                             />
                         </div>
 
-                        <div className="w-1/2"></div>
+                        {/* EMPTY SPACE FOR DESKTOP */}
+                        <div className="hidden md:block md:w-1/2"></div>
+
                     </div>
 
                     {/* RIGHT ITEM */}
-                    <div className="relative flex items-center justify-between">
+                    <div className="relative flex flex-col md:flex-row items-center md:items-start">
 
                         <EducationBarDot />
 
-                        <div className="w-1/2"></div>
+                        <div className="hidden md:block md:w-1/2"></div>
 
-                        <div className="w-1/2 pl-12">
+                        <div className="w-full md:w-1/2 md:pl-12">
                             <EducationBar
                                 img={Job1}
-                                description="Junior Full Stack Developer – Dynamic Liquids (Jun 2023 – Jul 2024). Contributed to Flutter-based mobile apps and expanded into React.js and backend development."
+                                description="Junior Full Stack Developer"
+                                place="Dynamic Liquids"
+                                year="Jun 2023 – Jul 2024."
                             />
                         </div>
+
                     </div>
 
                     {/* LEFT ITEM */}
-                    <div className="relative flex items-center justify-between">
+                    <div className="relative flex flex-col md:flex-row items-center md:items-start">
 
                         <EducationBarDot />
 
-                        <div className="w-1/2 pr-12 text-right">
+                        <div className="w-full md:w-1/2 md:pr-12 md:text-right">
                             <EducationBar
                                 img={Ug}
-                                description="B.Sc. Computer Science – Bishop Heber College (2020 – 2023). CGPA: 8.36 / 10.0."
+                                description="B.Sc. CS – CGPA: 8.36 / 10.0."
+                                place="Bishop Heber College"
+                                year="2020 – 2023."
                             />
                         </div>
 
@@ -67,29 +78,32 @@ export default function JourneySection() {
                     </div>
 
                     {/* RIGHT ITEM */}
-                    <div className="relative flex items-center justify-between">
+                    <div className="relative flex flex-col md:flex-row items-center md:items-start">
 
                         <EducationBarDot />
+                        <div className="hidden md:block md:w-1/2"></div>
 
-                        <div className="w-1/2"></div>
-
-                        <div className="w-1/2 pl-12">
+                        <div className="w-full md:w-1/2 md:pl-12">
                             <EducationBar
                                 img={Hsc}
-                                description="HSC – SFS Matriculation Hr. Sec. School (2019 – 2020). 72.5%."
+                                description="HSC (72.5%)"
+                                place="SFS Matriculation Hr. Sec. School"
+                                year="2019 – 2020."
                             />
                         </div>
                     </div>
 
                     {/* LEFT ITEM */}
-                    <div className="relative flex items-center justify-between">
+                    <div className="relative flex flex-col md:flex-row items-center md:items-start">
 
                         <EducationBarDot />
 
-                        <div className="w-1/2 pr-12 text-right">
+                        <div className="w-full md:w-1/2 md:pr-12 md:text-right">
                             <EducationBar
                                 img={Sslc}
-                                description="SSLC – SFS Matriculation Hr. Sec. School (2017 – 2018). 91.8%."
+                                description="SSLC (91.8%)"
+                                place="SFS Matriculation Hr. Sec. School"
+                                year="2017 – 2018."
                             />
                         </div>
 
@@ -97,6 +111,7 @@ export default function JourneySection() {
                     </div>
 
                 </div>
+
             </div>
         </div>
     );

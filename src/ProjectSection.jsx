@@ -3,7 +3,7 @@ import SectionHeading from "./components/SectionHeading";
 
 export default function ProjectSection() {
   return (
-    <section className="w-full bg-black py-20 px-6 md:px-20 text-white">
+    <section className="py-20 px-6 md:px-20">
 
       <SectionHeading title="Projects" />
 

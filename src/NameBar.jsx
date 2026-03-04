@@ -4,12 +4,11 @@ import ResumeButton from "./components/ResumeButton";
 import workImg from "./assets/about_img.png";
 import blob from "./assets/about-img-bg.png";
 
-
 export default function NameBar() {
   return (
-    <div className="w-full min-h-screen bg-gradient-to-br from-neutral-950 via-neutral-900 to-black flex items-center px-6 md:px-20 text-white">
+    <div className="min-h-screen flex items-center px-6 md:px-20 relative z-10">
 
-      <div className="max-w-7xl mx-auto w-full flex flex-col md:flex-row items-center justify-between gap-12">
+      <div className="max-w-7xl mx-auto w-full flex flex-col-reverse mt-20 md:flex-row items-center justify-between gap-12">
 
         {/* LEFT SIDE - TEXT */}
         <div className="max-w-3xl">
@@ -57,7 +56,7 @@ export default function NameBar() {
           {/* Glow */}
           <div className="absolute inset-0 
                   bg-gradient-to-r from-blue-500 via-cyan-500 to-blue-600 
-                  blur-3xl opacity-25 
+                  blur-3xl opacity-20 
                   group-hover:opacity-35 
                   transition duration-500">
           </div>
