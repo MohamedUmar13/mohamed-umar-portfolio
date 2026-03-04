@@ -1,4 +1,4 @@
-import { AppBar, Fade, MenuItem, Slide, Toolbar, useScrollTrigger } from '@mui/material';
+import { AppBar, Fade, MenuItem, Slide, Toolbar, Tooltip, useScrollTrigger } from '@mui/material';
 
 
 function HideOnScroll({ children }) {
@@ -33,7 +33,7 @@ export default function TopBar() {
                 position="static"
                 elevation={scrolled ? 6 : 0}
                 sx={{
-                    height:"70px",
+                    height: "70px",
                     width: "70%",
                     borderRadius: "5px",
                     transition: "all 0.3s ease",
@@ -49,9 +49,11 @@ export default function TopBar() {
             >
                 <Toolbar sx={{ justifyContent: "center", width: "100%" }}>
                     {pages.map((page) => (
-                        <MenuItem key={page}>
-                            {page}
-                        </MenuItem>
+                        <Tooltip title="under development !">
+                            <MenuItem key={page}>
+                                {page}
+                            </MenuItem>
+                        </Tooltip>
                     ))}
                 </Toolbar>
             </AppBar>

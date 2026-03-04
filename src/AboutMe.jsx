@@ -2,9 +2,10 @@ import SectionHeading from "./components/SectionHeading";
 
 export default function AboutSection() {
     return (
-        <section className="w-full bg-gradient-to-br from-neutral-950 via-neutral-900 to-black flex py-24 px-6 md:px-20 text-white">
 
-            <div className="max-w-4xl mx-auto">
+        <div className="flex py-10 md:py-20 px-6 md:px-20">
+
+            <div className="max-w-4xl ">
 
                 <SectionHeading title="About Me" />
 
@@ -18,6 +19,6 @@ export default function AboutSection() {
 
             </div>
 
-        </section>
+        </div>
     );
 }

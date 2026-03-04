@@ -12,7 +12,7 @@ export default function SkillsSection() {
     const skills = [html, css, js, firebase, react, flutter, mongodb, github];
 
     return (
-        <div className="bg-black py-20">
+        <div className="py-20">
             <Marquee speed={50} gradient={false} pauseOnHover={true}>
                 {
                     skills.map((skill, index) => (

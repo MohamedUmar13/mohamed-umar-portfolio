@@ -1,10 +1,11 @@
 import Lottie from "lottie-react";
 
-export default function EducationBar({ img, description }) {
+export default function EducationBar({ img, description, place, year }) {
     return (
         <div className="
       flex items-center gap-6 
-      bg-neutral-900 
+      bg-white/5 backdrop-blur-sm 
+      border border-white/10 
       p-6 
       rounded-xl 
       shadow-md
@@ -17,9 +18,19 @@ export default function EducationBar({ img, description }) {
                 <Lottie animationData={img} loop={true} />
             </div>
 
-            <p className="text-gray-300 text-base md:text-lg leading-relaxed">
-                {description}
-            </p>
+            <div className="flex flex-col">
+                <h3 className="text-white text-lg md:text-xl font-semibold">
+                    {description}
+                </h3>
+
+                <p className="text-blue-400 text-sm mt-1">
+                    {place}
+                </p>
+
+                <p className="text-gray-500 text-sm mt-1">
+                    {year}
+                </p>
+            </div>
 
         </div>
     );
